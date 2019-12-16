@@ -6,37 +6,14 @@
     android:layout_height="wrap_content"
     tools:context=".Aggiungi_Evento">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="393dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="27dp"
-        app:layout_constraintBottom_toTopOf="@+id/textInputEditText3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-    </com.google.android.material.textfield.TextInputLayout>
-
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText3"
+        android:id="@+id/nomecliente"
         android:layout_width="247dp"
         android:layout_height="70dp"
-        android:layout_marginBottom="573dp"
-        android:hint="Nome"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText2"
-        android:layout_width="247dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="500dp"
-        android:hint="Cognome"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="550dp"
+        android:hint="Nome e Cognome"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +25,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="268dp"
-        android:layout_marginTop="17dp"
         android:layout_marginEnd="85dp"
         android:layout_marginBottom="427dp"
         android:clickable="true"
@@ -56,34 +32,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText2"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_date_range_black_24dp" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="31dp"
         android:layout_marginEnd="125dp"
         android:layout_marginBottom="450dp"
         android:text="Inserisci Data Evento"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tasto_data"
         app:layout_constraintHorizontal_bias="0.027"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText2"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Spinner
-        android:id="@+id/Spinner_Menu"
-        android:layout_width="302dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginBottom="364dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.618"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
@@ -91,11 +52,65 @@
         android:layout_width="302dp"
         android:layout_height="29dp"
         android:layout_marginStart="6dp"
-        android:layout_marginBottom="296dp"
+        android:layout_marginTop="304dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSceltaMenu"
+        android:layout_width="272dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="124dp"
+        android:text="Menù"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.621"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_menu" />
+
+    <Spinner
+        android:id="@+id/spinner_menu"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Spinner_ExtraOpzioni" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="15dp"
+        android:text="inserisci opzioni"
+        app:layout_constraintBottom_toTopOf="@+id/Spinner_ExtraOpzioni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="279dp"
+        android:layout_marginBottom="4dp"
+        android:text="scegli menù"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Spinner_ExtraOpzioni" />
 
 </android.support.constraint.ConstraintLayout>
 

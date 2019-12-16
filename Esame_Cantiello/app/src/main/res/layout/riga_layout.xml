@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_goneMarginEnd="8dp"
+    app:layout_goneMarginStart="8dp"
+    app:layout_goneMarginTop="8dp">
+
+    <RelativeLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/text_view_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Data"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#536DFE"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/text_view_priority"
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#F15959"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_title"
+            android:text="Tipo festa"
+
+
+            android:textColor="#122B36"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
