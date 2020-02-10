@@ -4,8 +4,8 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:layout_goneMarginEnd="8dp"
-    app:layout_goneMarginStart="8dp"
-    app:layout_goneMarginTop="8dp">
+    app:layout_goneMarginStart="1dp"
+    app:layout_goneMarginTop="1dp">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -53,5 +53,3 @@
 
 
 </androidx.cardview.widget.CardView>
-
-

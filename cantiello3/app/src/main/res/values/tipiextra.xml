@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="special_guest">
+        <item>Dj set </item>
+        <item>spettacolo magia </item>
+        <item>comparsa personaggio</item>
+
+
+    </string-array>
+
+</resources>
